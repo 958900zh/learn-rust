@@ -1,10 +1,13 @@
 mod demo02;
+mod demo03;
 
 use std::fs;
 
 
 fn main() {
-    demo02::struct_demo();
+    for arg in std::env::args() {
+        println!("arg is {}", arg);
+    }
 }
 
 fn http_demo() {
